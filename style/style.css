@@ -1,0 +1,1147 @@
+:root {
+  --primary-color: #fff;
+  --secondary-color: #000;
+  --btn-color: #1f1f1f;
+  --tex-color: #545454;
+  --text-font: "Inter", serif;
+  --border-color: #dadada;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: var(--primary-color);
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 3rem 0rem;
+}
+
+.navMenu {
+  display: flex;
+  gap: 2.5rem;
+  margin: 0;
+}
+
+.itemLink a {
+  font-size: 1rem;
+  color: var(--tex-color);
+  font-family: var(--text-font);
+  font-weight: 600;
+  font-size: 1.375rem;
+  cursor: pointer;
+}
+
+.itemLink a:hover {
+  color: var(--secondary-color);
+}
+
+.signUpBtn,
+.learnMoreBtn {
+  background-color: var(--btn-color);
+  color: var(--primary-color);
+  padding: 1rem 2rem;
+  border-radius: 0.25rem;
+  font-family: var(--text-font);
+  font-size: 1.375rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.signUpBtn:hover,
+.learnMoreBtn:hover {
+  background-color: var(--primary-color);
+  color: var(--btn-color);
+}
+
+.signUpBtn:active,
+.learnMoreBtn:active {
+  background-color: var(--btn-color);
+  color: var(--primary-color);
+}
+
+.heroSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.heroTop,
+.heroBottom {
+  display: flex;
+  text-align: start;
+  justify-content: space-between;
+}
+
+.heroTopText {
+  font-family: var(--text-font);
+  font-weight: 500;
+}
+
+.heroTopText h1 {
+  font-size: 8.313rem;
+  font-weight: 500;
+  color: var(--btn-color);
+  line-height: 10rem;
+  white-space: pre;
+}
+
+.heroTopText p {
+  font-size: 1.5rem;
+  color: var(--tex-color);
+  line-height: 2.75rem;
+}
+
+.heroBottomText {
+  font-family: var(--text-font);
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+}
+
+.heroBottomText button {
+  background-color: var(--btn-color);
+  color: var(--primary-color);
+  width: 50%;
+  padding: 0.5rem 2rem;
+  border-radius: 0.25rem;
+  font-family: var(--text-font);
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.heroBottomText button:hover {
+  background-color: var(--primary-color);
+  color: var(--btn-color);
+}
+
+.heroBottomText button:active {
+  background-color: var(--btn-color);
+  color: var(--primary-color);
+}
+
+.statics > div > h2 > span {
+  font-weight: 400;
+  font-size: 4.375rem;
+  margin-bottom: 1rem;
+  color: var(--tex-color);
+  display: block;
+}
+
+.statics > div > h2 {
+  font-weight: 400;
+  font-size: 1.375rem;
+  color: var(--tex-color);
+}
+
+.statics {
+  margin-top: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  padding-right: 6rem;
+}
+
+.heroBottomImg {
+  transform: translateX(-10%);
+  position: relative;
+}
+
+.heroBottomImg::before {
+  content: "";
+  position: absolute;
+  top: -1.5rem;
+  left: -1rem;
+  width: 206px;
+  height: 187px;
+  border-radius: 4px;
+  border: 2px solid var(--btn-color);
+  z-index: -1;
+}
+
+.heroBottomImg::after {
+  content: url(../media/Arrow.png);
+  position: absolute;
+  bottom: -2.2rem;
+  right: -6.25rem;
+  width: 206px;
+  height: 187px;
+  border-radius: 4px;
+  z-index: 2;
+}
+
+.servicesText {
+  display: flex;
+  align-items: center;
+}
+
+.servicesText hr {
+  width: 6.25rem;
+  color: var(--btn-color);
+  background-color: var(--btn-color);
+  opacity: 1;
+  height: 3px;
+  margin-right: 2rem;
+}
+
+.card {
+  border: none;
+  flex-direction: row;
+  font-family: var(--text-font);
+}
+
+.card h5 {
+  font-weight: 600;
+  font-size: 1.875rem;
+  color: var(--btn-color);
+}
+
+.card p {
+  font-weight: 500;
+  font-size: 1.375rem;
+  color: var(--tex-color);
+}
+
+.learnMoreText {
+  font-family: "inter", sans-serif;
+}
+
+.learnMoreText h2 {
+  font-weight: 600;
+  font-size: 3.625rem;
+  color: var(--btn-color);
+  margin-bottom: 2rem;
+}
+
+.learnMoreText p {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: var(--tex-color);
+  margin-bottom: 2rem;
+}
+
+.learnMoreText > div > h3 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--btn-color);
+}
+
+.learnMoreText > div {
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 2rem;
+}
+
+.learnMoreText > div > a {
+  font-weight: 100;
+  font-size: 3rem;
+  align-self: center;
+  margin-left: auto;
+  cursor: pointer;
+  color: var(--btn-color);
+}
+
+.processTitle {
+  font-family: "inter", sans-serif;
+  font-weight: 600;
+  font-size: 3.625rem;
+  color: var(--btn-color);
+}
+
+.icons {
+  text-align: center;
+}
+
+.proccessCard {
+  font-family: "inter", sans-serif;
+}
+
+.text {
+  padding-top: 1rem;
+  padding-left: 2.5rem;
+}
+
+.text h3 {
+  font-weight: 700;
+  font-size: 1.875rem;
+  color: var(--btn-color);
+}
+
+.text P {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.testamonialsImg {
+  position: relative;
+  overflow: hidden;
+}
+
+.cardTestOne,
+.cardTestTwo {
+  background-color: var(--btn-color);
+  font-family: "inter", sans-serif;
+  border-radius: 4px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.cardTestOne {
+  position: absolute;
+  top: -35%;
+  left: 35%;
+  padding: 3rem;
+  width: 70%;
+}
+
+.cardTestTwo {
+  position: absolute;
+  top: -35%;
+  left: 115%;
+  padding: 3rem;
+  width: 70%;
+}
+
+.cardTestOne p,
+.cardTestTwo p {
+  color: var(--primary-color);
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.names {
+  padding-left: 2rem;
+  padding-top: 1rem;
+}
+
+.names h5 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+.names p {
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: #929292;
+}
+
+.testamonialsText h2 {
+  font-weight: 600;
+  font-size: 3.625rem;
+  color: var(--btn-color);
+}
+
+.footerText {
+  margin: 10rem auto 3rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 65%;
+  font-family: "inter", sans-serif;
+}
+
+.inputCont {
+  width: 100%;
+  margin-top: 10rem;
+  background-color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  padding: 0.2rem;
+  box-shadow: 0px 0px 10px #00000024;
+}
+
+.form-control {
+  border: none !important;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.form-control:focus {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.input-group i {
+  padding: 0 0 0 2rem;
+  margin-right: 0.3rem;
+}
+
+.input-group-text {
+  border: none !important;
+  border-radius: 0 !important;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.footerText h2 {
+  font-weight: 600;
+  font-size: 3.625rem;
+  color: var(--btn-color);
+}
+
+.footerText p {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: var(--tex-color);
+}
+
+.footer {
+  background-color: var(--btn-color);
+  width: 100%;
+  margin-top: -4.6rem;
+  padding-bottom: 10rem;
+}
+
+.footerInfo {
+  padding-top: 7rem;
+  font-family: "inter", sans-serif;
+}
+
+.logoFooter {
+  margin-right: 12rem;
+}
+
+.logoImg {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(97deg)
+    brightness(103%) contrast(103%);
+}
+
+.logoFooter p {
+  font-weight: 500;
+  font-size: 1.375rem;
+  color: #d1d1d1;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.infoHead h4 {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.iconsFooter > i > img {
+  cursor: pointer;
+}
+
+.footerLinks a {
+  font-family: "inter", sans-serif;
+  font-weight: 500;
+  font-size: 1.375rem;
+  color: #d1d1d1;
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .heroTopText h1 {
+    font-size: 5rem;
+  }
+  .heroTopText p {
+    font-size: 1rem;
+    width: 70%;
+  }
+  .statics > div > h2 > span {
+    font-size: 3rem;
+  }
+  .statics > div > h2 {
+    font-size: 1rem;
+  }
+  .card h5 {
+    font-weight: 600;
+    font-size: 1.25rem;
+  }
+  .card p {
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  .learnMoreText h2 {
+    font-weight: 600;
+    font-size: 2.75rem;
+    color: var(--btn-color);
+    margin-bottom: 2rem;
+  }
+  .learnMoreText p {
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--tex-color);
+    margin-bottom: 2rem;
+  }
+  .learnMoreText > div > h3 {
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--btn-color);
+  }
+  .learnMoreText > div {
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 1.3rem;
+  }
+  .learnMoreText > div > a {
+    font-weight: 100;
+    font-size: 2rem;
+    align-self: center;
+    margin-left: auto;
+    cursor: pointer;
+    color: var(--btn-color);
+  }
+  .processTitle {
+    font-size: 3rem;
+  }
+  .text h3 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--btn-color);
+  }
+  .text P {
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  .cardTestOne p,
+  .cardTestTwo p {
+    font-size: 1rem;
+  }
+  .names h5 {
+    font-size: 1rem;
+  }
+  .names p {
+    font-size: 0.75rem;
+  }
+  .testamonialsText h2 {
+    font-size: 2.75rem;
+  }
+  .input-group-text {
+    font-size: 1.25rem;
+  }
+  .footerText h2 {
+    font-size: 2.75rem;
+  }
+  .form-control {
+    font-size: 1.25rem;
+  }
+  .footerText p {
+    font-size: 1.25rem;
+  }
+  .logoFooter p {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
+  .infoHead h4 {
+    font-size: 1.25rem;
+  }
+  .footerLinks a {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .heroTopText h1 {
+    font-size: 3.5rem;
+  }
+  .heroTopText p {
+    font-size: 0.9rem;
+  }
+  .statics > div > h2 > span {
+    font-size: 1.5rem;
+  }
+  .statics > div > h2 {
+    font-size: 0.75rem;
+  }
+  .heroBottomText button,
+  .signUpBtn,
+  .itemLink a {
+    font-size: 1rem;
+  }
+  .card h5 {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  .card p {
+    font-weight: 500;
+    font-size: 0.75rem;
+  }
+  .learnMoreText h2 {
+    font-weight: 600;
+    font-size: 2rem;
+    color: var(--btn-color);
+    margin-bottom: 2rem;
+  }
+  .learnMoreText p {
+    font-weight: 500;
+    font-size: 0.75rem;
+    color: var(--tex-color);
+    margin-bottom: 2rem;
+  }
+  .learnMoreText > div > h3 {
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--btn-color);
+  }
+  .learnMoreText > div {
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 1.3rem;
+  }
+  .learnMoreText > div > a {
+    font-weight: 100;
+    font-size: 1.5rem;
+    align-self: center;
+    margin-left: auto;
+    cursor: pointer;
+    color: var(--btn-color);
+  }
+  ul {
+    padding-left: 0;
+  }
+  .processTitle {
+    font-size: 2.5rem;
+  }
+  .text {
+    padding-top: 1rem;
+    padding-left: 2rem;
+  }
+  .text h3 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--btn-color);
+  }
+  .text P {
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  .cardTestOne p,
+  .cardTestTwo p {
+    font-size: 1rem;
+  }
+  .cardTestOne,
+  .cardTestTwo {
+    padding: 0.5rem;
+  }
+  .cardTestOne img,
+  .cardTestTwo img {
+    margin: 0.5rem !important;
+  }
+  .cardTestOne div,
+  .cardTestTwo div {
+    margin: 0 !important;
+  }
+  .names {
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+  }
+  .names h5 {
+    font-size: 1rem;
+  }
+  .left img,
+  .right img {
+    width: 13% !important;
+  }
+  .names p {
+    font-size: 0.75rem;
+  }
+  .testamonialsText h2 {
+    font-size: 2rem;
+  }
+  .input-group-text {
+    font-size: 1rem;
+  }
+  .footerText h2 {
+    font-size: 2.5rem;
+  }
+  .form-control {
+    font-size: 1rem;
+  }
+  .footerText p {
+    font-size: 1rem;
+  }
+  .logoFooter p {
+    font-size: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
+  .iconsFooter > i > img {
+    width: 1.5rem;
+  }
+
+  .infoHead h4 {
+    font-size: 1rem;
+  }
+
+  .footerLinks a {
+    font-size: 0.75rem;
+  }
+  .logoFooter {
+    margin-right: 3rem;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .menu {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+  .signUpBtn {
+    width: 100%;
+  }
+  .heroTop,
+  .heroBottom {
+    text-align: center;
+  }
+  .heroTopText h1 {
+    font-size: 3.5rem;
+  }
+  .heroTopText p {
+    font-size: 0.9rem;
+  }
+  .statics > div > h2 > span {
+    font-size: 1.5rem;
+  }
+  .statics > div > h2 {
+    font-size: 0.75rem;
+  }
+  .heroBottomText button,
+  .signUpBtn,
+  .itemLink a {
+    font-size: 1rem;
+  }
+  .heroBottomText button {
+    align-self: center;
+  }
+  .statics > div {
+    padding-right: 0;
+    flex: 1;
+    max-width: 33%;
+    text-align: center;
+  }
+  .statics {
+    justify-content: center;
+    align-items: center;
+    padding-right: 0;
+  }
+  .heroBottomImg {
+    margin-top: 4rem;
+    transform: translateX(0);
+  }
+  .heroBottomImg::after {
+    content: "\2193";
+    background-color: var(--btn-color);
+    color: var(--primary-color);
+    position: absolute;
+    bottom: 0rem;
+    right: 0rem;
+    font-size: 3.5rem;
+    width: 100px;
+    height: 100px;
+    border-radius: 4px;
+    z-index: 2;
+  }
+  .heroBottomImg::before {
+    content: "";
+    position: absolute;
+    top: -0.7rem;
+    left: 0rem;
+    width: 206px;
+    height: 187px;
+    border-radius: 4px;
+    border: 2px solid var(--btn-color);
+    z-index: -1;
+  }
+  .card h5 {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  .card p {
+    font-weight: 500;
+    font-size: 0.75rem;
+  }
+  .learnMoreText {
+    text-align: center;
+  }
+  .learnMoreText h2 {
+    font-weight: 600;
+    font-size: 2rem;
+    color: var(--btn-color);
+    margin-bottom: 2rem;
+  }
+  .learnMoreText p {
+    font-weight: 500;
+    font-size: 0.75rem;
+    color: var(--tex-color);
+    margin-bottom: 2rem;
+  }
+  .learnMoreText > div > h3 {
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--btn-color);
+  }
+  .learnMoreText > div {
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 1.3rem;
+  }
+  .learnMoreText > div > a {
+    font-weight: 100;
+    font-size: 1.5rem;
+    align-self: center;
+    margin-left: auto;
+    cursor: pointer;
+    color: var(--btn-color);
+  }
+  .processTitle {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .text {
+    padding-top: 1rem;
+    padding-left: 1.5rem;
+  }
+  .text h3 {
+    font-size: 1.25rem;
+    color: var(--btn-color);
+  }
+  .text P {
+    font-size: 1rem;
+  }
+  .testamonials {
+    flex-direction: column;
+    align-items: center;
+  }
+  .testamonialsText {
+    order: -1;
+    text-align: center;
+    margin-bottom: 1rem;
+    width: 100% !important;
+  }
+  .cardTestTwo {
+    display: none !important;
+  }
+  .cardTestOne p,
+  .cardTestTwo p {
+    font-size: 1rem;
+  }
+  .cardTestOne,
+  .cardTestTwo {
+    padding: 0.5rem;
+  }
+  .cardTestOne img,
+  .cardTestTwo img {
+    margin: 0.5rem !important;
+  }
+  .cardTestOne div,
+  .cardTestTwo div {
+    margin: 0 !important;
+  }
+  .names {
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+  }
+  .names h5 {
+    font-size: 1rem;
+  }
+  .left img,
+  .right img {
+    width: 13% !important;
+  }
+  .names p {
+    font-size: 0.75rem;
+  }
+  .testamonialsText h2 {
+    font-size: 2rem;
+    align-self: center;
+  }
+  .input-group-text {
+    font-size: 1rem;
+  }
+  .footerText h2 {
+    font-size: 2rem;
+  }
+  .form-control {
+    font-size: 1rem;
+  }
+  .footerText p {
+    font-size: 1rem;
+  }
+  .footerText {
+    width: 100%;
+  }
+  .logoFooter p {
+    font-size: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
+  .iconsFooter > i > img {
+    width: 1.5rem;
+  }
+
+  .infoHead h4 {
+    font-size: 1rem;
+  }
+  .infoHead {
+    text-align: center;
+  }
+  .footerLinks a {
+    font-size: 0.75rem;
+  }
+  .footerLinks {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  .logoFooter {
+    margin-right: 1rem;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  ul {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 425px) {
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .menu {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  .navMenu {
+    gap: 0.5rem;
+  }
+  .signUpBtn {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .itemLink a {
+    font-size: 1.25rem;
+  }
+  .heroTop,
+  .heroBottom {
+    text-align: center;
+  }
+  .heroTopText h1 {
+    font-size: 3rem;
+  }
+  .heroTopText p {
+    font-size: 0.9rem;
+  }
+  .statics > div > h2 > span {
+    font-size: 1.5rem;
+  }
+  .statics > div > h2 {
+    font-size: 0.75rem;
+  }
+  .heroBottomText button,
+  .signUpBtn,
+  .itemLink a {
+    font-size: 0.9rem;
+  }
+  .heroBottomText button {
+    align-self: center;
+    margin-bottom: 1rem;
+  }
+  .statics > div {
+    padding-right: 0;
+    flex: 1;
+    max-width: 33%;
+    text-align: center;
+  }
+  .statics {
+    justify-content: center;
+    align-items: center;
+    padding-right: 0;
+  }
+  .heroBottomImg {
+    margin-top: 4rem;
+    transform: translateX(0%);
+  }
+  .heroBottomImg::after {
+    content: "\2193";
+    background-color: var(--btn-color);
+    color: var(--primary-color);
+    position: absolute;
+    bottom: 0rem;
+    right: 0rem;
+    font-size: 3.5rem;
+    width: 100px;
+    height: 100px;
+    border-radius: 4px;
+    z-index: 2;
+  }
+  .heroBottomImg::before {
+    content: "";
+    position: absolute;
+    top: -0.7rem;
+    left: 0rem;
+    width: 206px;
+    height: 187px;
+    border-radius: 4px;
+    border: 2px solid var(--btn-color);
+    z-index: -1;
+  }
+  .card h5 {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  .card p {
+    font-weight: 500;
+    font-size: 0.75rem;
+  }
+  .learnMoreText {
+    text-align: center;
+  }
+  .learnMoreText h2 {
+    font-weight: 600;
+    font-size: 2rem;
+    color: var(--btn-color);
+    margin-bottom: 2rem;
+  }
+  .learnMoreText p {
+    font-weight: 500;
+    font-size: 0.75rem;
+    color: var(--tex-color);
+    margin-bottom: 2rem;
+  }
+  .learnMoreText > div > h3 {
+    font-weight: 600;
+    font-size: 0.75rem;
+    color: var(--btn-color);
+  }
+  .learnMoreText > div {
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 1.3rem;
+  }
+  .learnMoreText > div > a {
+    font-weight: 100;
+    font-size: 1.5rem;
+    align-self: center;
+    margin-left: auto;
+    cursor: pointer;
+    color: var(--btn-color);
+  }
+  .processTitle {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .text {
+    padding-top: 1rem;
+    padding-left: 1rem;
+  }
+  .text h3 {
+    font-size: 1rem;
+    color: var(--btn-color);
+  }
+  .text P {
+    font-size: 0.75rem;
+  }
+  .testamonials {
+    flex-direction: column;
+    align-items: center;
+  }
+  .testamonialsText {
+    order: -1;
+    text-align: center;
+    margin-bottom: 1rem;
+    width: 100% !important;
+  }
+  .cardTestTwo {
+    display: none !important;
+  }
+  .cardTestOne p,
+  .cardTestTwo p {
+    font-size: 1rem;
+  }
+  .cardTestOne,
+  .cardTestTwo {
+    padding: 0.5rem;
+  }
+  .cardTestOne img,
+  .cardTestTwo img {
+    margin: 0.5rem !important;
+  }
+  .cardTestOne div,
+  .cardTestTwo div {
+    margin: 0 !important;
+  }
+  .names {
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+  }
+  .names h5 {
+    font-size: 1rem;
+  }
+  .left img,
+  .right img {
+    width: 13% !important;
+  }
+  .names p {
+    font-size: 0.75rem;
+  }
+  .testamonialsText h2 {
+    font-size: 2rem;
+    align-self: center;
+  }
+  .footerText {
+    width: 100%;
+  }
+  .input-group-text {
+    font-size: 1rem;
+  }
+  .footerText h2 {
+    font-size: 2rem;
+  }
+  .form-control {
+    font-size: 1rem;
+  }
+  .footerText p {
+    font-size: 1rem;
+  }
+  .logoFooter p {
+    font-size: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
+  .iconsFooter > i > img {
+    width: 1.5rem;
+  }
+  .infoHead h4 {
+    font-size: 1rem;
+  }
+  .infoHead {
+    text-align: center;
+  }
+  .footerLinks a {
+    font-size: 0.75rem;
+  }
+  .footerLinks {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  .logoFooter {
+    margin-right: 1rem;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  ul {
+    padding-left: 0;
+  }
+}
