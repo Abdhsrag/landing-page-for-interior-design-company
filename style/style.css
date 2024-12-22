@@ -18,6 +18,8 @@ body {
   overflow-x: hidden;
 }
 
+::placeholder{color: var(--tex-color);}
+
 a {
   text-decoration: none;
   cursor: pointer;
